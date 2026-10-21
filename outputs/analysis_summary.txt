@@ -1,0 +1,27 @@
+UNEMPLOYMENT & YOUTH MIGRATION ANALYSIS
+Mode: USER-PROVIDED CSV DATA
+Unemployment rows after cleaning: 360
+Migration rows after cleaning: 360
+Unemployment reference year analysed: 2024
+Migration reference year analysed: 2024
+Matched state-year records: 360
+Correlation between unemployment rate and migrant count: 0.15
+
+Top states/UTs by youth unemployment rate:
+    state  year  youth_unemployment_rate
+  Haryana  2024                    18.17
+Telangana  2024                    17.84
+  Gujarat  2024                    16.62
+    Delhi  2024                    15.90
+  Mizoram  2024                    15.80
+
+Top states/UTs by youth migrant count:
+         state  year  youth_migrants
+Andhra Pradesh  2024          197716
+       Haryana  2024          190139
+         Assam  2024          189692
+   Uttarakhand  2024          183364
+     Telangana  2024          177254
+
+Note: The input data is synthetic, not official statistics.
+Correlation does not establish causation.
