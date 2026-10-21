@@ -1,153 +1,59 @@
 # Unemployment and Youth Migration Analysis in India
 
-A Python-based data analysis project using **Pandas** and **Matplotlib** to clean official datasets, validate records, rank Indian states and union territories, and visualize youth unemployment and migration patterns.
+A Python data-analysis project using Pandas and Matplotlib for cleaning, state-level comparison, rankings, and chart generation.
 
-## Project Overview
+## Quick start (Windows + VS Code)
 
-This project examines two related but distinct topics:
-
-- **Youth unemployment:** State/UT-level unemployment rates for people aged 15–29 from 2022–2025.
-- **Youth migration:** Census 2011 migration counts for people aged 15–29, aggregated by state/UT.
-
-The two datasets cover different reference periods. The project analyses them separately and does not claim that historical migration counts explain recent unemployment trends.
-
-## Technologies Used
-
-- Python
-- Pandas
-- Matplotlib
-- CSV data processing
-- Data validation and visualization
-
-## Data Sources
-
-### 1. Youth Unemployment
-
-**Source:** Ministry of Statistics and Programme Implementation (MoSPI), eSankhyiki.
-
-The dataset contains annual youth unemployment rates for people aged 15–29, covering rural and urban sectors and the selected person-level and weekly-status filters.
-
-- Period analysed: 2022–2025
-- Geographic coverage: 36 states and union territories
-- Measure: Unemployment rate (%)
-
-### 2. Youth Migration
-
-**Source:** Census of India 2011, D-05 — *Migrants by place of last residence, age, sex, reason for migration and duration of residence.*
-
-Official dataset: https://censusindia.gov.in/nada/index.php/catalog/11030/study-description
-
-The analysis selects ages 15–19, 20–24, and 25–29, then aggregates the migrant counts for each state/UT.
-
-- Reference year: 2011
-- Age range: 15–29 years
-- Measure: Migrant count (persons)
-- Selection: Total place of enumeration, total last residence, and all durations of residence
-- Validation: 105 filtered records representing 35 state/UT entries across three age groups
-
-**Why Census 2011?** It is the latest completed national Census providing the detailed migration table used in this project. The next Census is scheduled for 2027.
-
-## Project Structure
-
-```text
-Unemplyment_youth_Migration_Analysis/
-├── data/
-│   ├── unemployment.csv
-│   └── migration.csv
-├── outputs/
-│   ├── analysis_summary.txt
-│   ├── cleaned_unemployment.csv
-│   ├── state_unemployment_ranking.csv
-│   ├── yearly_unemployment_summary.csv
-│   ├── youth_unemployment_by_state.png
-│   ├── youth_unemployment_trend.png
-│   ├── cleaned_youth_migration_2011.csv
-│   ├── state_youth_migration_2011.csv
-│   ├── migration_analysis_summary.txt
-│   └── youth_migration_top15.png
-├── main.py
-├── inspect_migration.py
-├── requirements.txt
-└── README.md
-```
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3
-- Git (optional, for cloning the repository)
-
-### Installation
-
-Clone the repository and open its directory in VS Code.
-
-```bash
-git clone https://github.com/DevjithKumar/unemployment-youth-migration-analysis.git
-cd unemployment-youth-migration-analysis
-```
-
-Create and activate a virtual environment on Windows:
+1. Open this folder in VS Code.
+2. Open Terminal → New Terminal.
+3. Run:
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
+py -m pip install -r requirements.txt
+py main.py
 ```
 
-Install dependencies:
+If PowerShell blocks activation, run `py -m pip install -r requirements.txt` and then `py main.py` without activating the environment.
 
-```powershell
-python -m pip install -r requirements.txt
-```
+The script will run immediately using clearly labelled DEMO DATA if official CSVs are not present. Do not report demo results as real findings.
 
-### Run the analyses
+## Replace demo data with real data
 
-Run the unemployment analysis:
+Put two files inside `data/` with these exact names:
 
-```powershell
-python main.py
-```
+### `unemployment.csv`
+Required columns:
+- `state` — state/UT name
+- `year` — reference year
+- `youth_unemployment_rate` — rate in percent for the chosen youth age group
 
-Run the youth migration analysis:
+Official source to start from:
+- Open Government Data (India), state/UT unemployment rate for persons aged 15–29, PLFS 2019–20 to 2023–24: https://www.data.gov.in/keywords/plfs
+- PLFS annual reports: https://dge.gov.in/reference-publication-reports-annual
 
-```powershell
-python inspect_migration.py
-```
+### `migration.csv`
+Required columns:
+- `state` — state/UT name
+- `year` — migration reference year
+- `youth_migrants` — migrant count for a clearly defined youth age group and migration definition
 
-Generated CSV files, summary reports, and charts are saved in the `outputs/` directory.
+Official source to start from:
+- Census of India, D-05: migrants by last residence, age, sex and duration, 2011: https://censusindia.gov.in/nada/index.php/catalog/11030/study-description
+- Census of India, D-03: migrants by last residence, duration and reason, 2011: https://censusindia.gov.in/nada/index.php/catalog/10840/study-description
 
-## Key Findings
+Download the official tables and prepare the two CSVs using consistent state names. Do not combine all-age migration counts with youth unemployment and call it a youth-to-youth comparison. The project keeps reference years visible because PLFS and Census periods may differ.
 
-### Youth Unemployment
+## Outputs
+The `outputs/` folder will contain:
+- cleaned CSV files
+- state ranking CSVs
+- unemployment and migration bar charts (PNG)
+- a text summary
 
-The simple, unweighted mean of state/UT unemployment rates declined from approximately **15.70% in 2022 to 13.73% in 2025**, with an increase in 2024.
-
-This is an average across state/UT rates, not the official All-India unemployment rate. It does not account for differences in population or labour-force size.
-
-### Youth Migration
-
-Based on the selected Census 2011 data, Maharashtra has the highest aggregated youth migration count among the state/UT entries in this analysis, followed by Uttar Pradesh.
-
-These are absolute counts, not population-adjusted migration rates. Larger populations can contribute to larger counts.
-
-## Limitations
-
-- Migration data is from Census 2011, while unemployment data covers 2022–2025.
-- Migration counts include different reasons for migration and are not restricted to employment-related moves.
-- Historical migration counts should not be interpreted as current migration levels.
-- State/UT boundaries and administrative classifications may have changed since 2011.
-- The analysis does not establish a causal relationship between unemployment and migration.
-- The simple mean of state/UT unemployment rates is not the official national unemployment estimate.
-
-## Future Improvements
-
-- Analyse migration reasons, including work/employment and education.
-- Add population-adjusted migration measures where suitable denominators are available.
-- Improve geographic comparability across Census and recent datasets.
-- Develop an interactive dashboard using Power BI or Streamlit.
-
-## Author
-
-**Devjith Kumar**
-
-GitHub: https://github.com/DevjithKumar
+## Suggested next improvements
+1. Align migration and unemployment data by state/UT and compatible time period.
+2. Add age-group and migration-reason filters when the source supports them.
+3. Add correlation only when the measures are comparable and explain that correlation does not establish causation.
+4. Add a Streamlit dashboard after validating the data.
