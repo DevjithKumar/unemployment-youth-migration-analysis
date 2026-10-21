@@ -1,59 +1,78 @@
-# Unemployment & Youth Migration Analysis in India
+# Unemployment and Youth Migration Analysis in India
 
-A Python data-analysis project using Pandas and Matplotlib for cleaning, state-level comparison, rankings, and chart generation.
+## Project Overview
+A Python-based data analysis project to explore youth unemployment rates and youth migration patterns across Indian states and Union Territories from 2015 to 2024.
 
-## Quick start (Windows + VS Code)
+## Technologies Used
+- Python
+- Pandas — data cleaning and analysis
+- Matplotlib — data visualization
+- CSV — data storage
+- Git and GitHub — version control
 
-1. Open this folder in VS Code.
-2. Open Terminal → New Terminal.
-3. Run:
+## Project Workflow
+1. Imported unemployment and migration datasets.
+2. Cleaned and validated data using Pandas.
+3. Handled missing values and duplicate records.
+4. Generated state-wise rankings for the latest available year.
+5. Analyzed the correlation between unemployment rates and migration counts.
+6. Created charts and exported results for reporting.
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-py -m pip install -r requirements.txt
-py main.py
+## Project Structure
+
+```text
+unemployment-youth-migration-analysis/
+├── data/
+│   ├── unemployment.csv
+│   ├── migration.csv
+│   └── migration_template.csv
+├── outputs/
+│   ├── cleaned_unemployment.csv
+│   ├── cleaned_migration.csv
+│   ├── state_unemployment_ranking.csv
+│   ├── state_migration_ranking.csv
+│   ├── youth_unemployment_by_state.png
+│   ├── youth_migration_by_state.png
+│   └── analysis_summary.txt
+├── main.py
+├── requirements.txt
+└── README.md
 ```
 
-If PowerShell blocks activation, run `py -m pip install -r requirements.txt` and then `py main.py` without activating the environment.
+## Key Outputs
+- Cleaned datasets
+- State-wise unemployment and migration rankings
+- Data visualization charts
+- Correlation analysis
+- Analysis summary report
 
-The script will run immediately using clearly labelled DEMO DATA if official CSVs are not present. Do not report demo results as real findings.
+## How to Run
 
-## Replace demo data with real data
+Clone the repository:
 
-Put two files inside `data/` with these exact names:
+```bash
+git clone https://github.com/DevjithKumar/unemployment-youth-migration-analysis.git
+cd unemployment-youth-migration-analysis
+```
 
-### `unemployment.csv`
-Required columns:
-- `state` — state/UT name
-- `year` — reference year
-- `youth_unemployment_rate` — rate in percent for the chosen youth age group
+Install dependencies:
 
-Official source to start from:
-- Open Government Data (India), state/UT unemployment rate for persons aged 15–29, PLFS 2019–20 to 2023–24: https://www.data.gov.in/keywords/plfs
-- PLFS annual reports: https://dge.gov.in/reference-publication-reports-annual
+```bash
+pip install -r requirements.txt
+```
 
-### `migration.csv`
-Required columns:
-- `state` — state/UT name
-- `year` — migration reference year
-- `youth_migrants` — migrant count for a clearly defined youth age group and migration definition
+Run the project:
 
-Official source to start from:
-- Census of India, D-05: migrants by last residence, age, sex and duration, 2011: https://censusindia.gov.in/nada/index.php/catalog/11030/study-description
-- Census of India, D-03: migrants by last residence, duration and reason, 2011: https://censusindia.gov.in/nada/index.php/catalog/10840/study-description
+```bash
+python main.py
+```
 
-Download the official tables and prepare the two CSVs using consistent state names. Do not combine all-age migration counts with youth unemployment and call it a youth-to-youth comparison. The project keeps reference years visible because PLFS and Census periods may differ.
+Results are saved in the `outputs/` directory.
 
-## Outputs
-The `outputs/` folder will contain:
-- cleaned CSV files
-- state ranking CSVs
-- unemployment and migration bar charts (PNG)
-- a text summary
 
-## Suggested next improvements
-1. Align migration and unemployment data by state/UT and compatible time period.
-2. Add age-group and migration-reason filters when the source supports them.
-3. Add correlation only when the measures are comparable and explain that correlation does not establish causation.
-4. Add a Streamlit dashboard after validating the data.
+## Author
+**Devjith Kumar**
+
+- GitHub: https://github.com/DevjithKumar
+- LinkedIn: https://www.linkedin.com/in/r-devjith-kumar-95bb9b1b7/
+
