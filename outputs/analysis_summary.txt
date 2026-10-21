@@ -1,27 +1,32 @@
-UNEMPLOYMENT & YOUTH MIGRATION ANALYSIS
-Mode: USER-PROVIDED CSV DATA
-Unemployment rows after cleaning: 360
-Migration rows after cleaning: 360
-Unemployment reference year analysed: 2024
-Migration reference year analysed: 2024
-Matched state-year records: 360
-Correlation between unemployment rate and migrant count: 0.15
+YOUTH UNEMPLOYMENT ANALYSIS — INDIA
+Source: User-provided MoSPI eSankhyiki data
+Population: Ages 15–29, persons, rural + urban
+Records after cleaning: 144
+States/UTs represented: 36
+Years analysed: 2022–2025
 
-Top states/UTs by youth unemployment rate:
-    state  year  youth_unemployment_rate
-  Haryana  2024                    18.17
-Telangana  2024                    17.84
-  Gujarat  2024                    16.62
-    Delhi  2024                    15.90
-  Mizoram  2024                    15.80
+Highest rate in 2025:
+                    state  year  value
+Andaman & Nicobar Islands  2025   31.2
+              Lakshadweep  2025   26.3
+                  Manipur  2025   22.9
+        Arunachal Pradesh  2025   19.9
+         Himachal Pradesh  2025   19.8
 
-Top states/UTs by youth migrant count:
-         state  year  youth_migrants
-Andhra Pradesh  2024          197716
-       Haryana  2024          190139
-         Assam  2024          189692
-   Uttarakhand  2024          183364
-     Telangana  2024          177254
+Lowest rate in 2025:
+                             state  year  value
+                           Gujarat  2025    2.5
+                    Madhya Pradesh  2025    4.2
+Dadra & Nagar Haveli & Daman & Diu  2025    4.2
+                      Chhattisgarh  2025    6.1
+                     Uttar Pradesh  2025    7.7
 
-Note: The input data is synthetic, not official statistics.
-Correlation does not establish causation.
+Mean of state/UT rates by year (not the official All India rate):
+ year  mean_state_unemployment_rate
+ 2022                     15.697222
+ 2023                     13.747222
+ 2024                     14.250000
+ 2025                     13.725000
+
+Note: A simple average across states/UTs is not the same as the official national unemployment rate, because state populations and labour-force sizes differ.
+Migration data is not merged or correlated in this version.

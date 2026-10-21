@@ -1,37 +1,37 @@
-state,year,youth_unemployment_rate
-Haryana,2024,18.17
-Telangana,2024,17.84
-Gujarat,2024,16.62
-Delhi,2024,15.9
-Mizoram,2024,15.8
-Jharkhand,2024,14.44
-Kerala,2024,13.7
-Uttarakhand,2024,13.5
-Tamil Nadu,2024,12.97
-Meghalaya,2024,12.81
-Chandigarh,2024,12.74
-Ladakh,2024,12.64
-Maharashtra,2024,12.28
-Lakshadweep,2024,11.81
-Tripura,2024,10.98
-Manipur,2024,10.89
-Uttar Pradesh,2024,9.99
-Andhra Pradesh,2024,9.79
-Sikkim,2024,9.56
-Karnataka,2024,9.42
-Jammu And Kashmir,2024,9.39
-Himachal Pradesh,2024,9.31
-Nagaland,2024,9.01
-Punjab,2024,8.47
-West Bengal,2024,8.27
-Goa,2024,8.22
-Dadra And Nagar Haveli And Daman And Diu,2024,7.92
-Odisha,2024,7.25
-Madhya Pradesh,2024,7.03
-Puducherry,2024,6.79
-Assam,2024,6.31
-Rajasthan,2024,6.17
-Arunachal Pradesh,2024,5.21
-Chhattisgarh,2024,4.61
-Bihar,2024,4.05
-Andaman And Nicobar Islands,2024,3.73
+year_type,year,frequency,indicator,state,gender,sector,agegroup,weekly_status,religion,socialgroup,general_education,quarter,month,value,unit
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Andaman & Nicobar Islands,person,rural + urban,15-29 years,PS+SS,all,all,all,,,31.2,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Lakshadweep,person,rural + urban,15-29 years,PS+SS,all,all,all,,,26.3,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Manipur,person,rural + urban,15-29 years,PS+SS,all,all,all,,,22.9,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Arunachal Pradesh,person,rural + urban,15-29 years,PS+SS,all,all,all,,,19.9,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Himachal Pradesh,person,rural + urban,15-29 years,PS+SS,all,all,all,,,19.8,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Puducherry,person,rural + urban,15-29 years,PS+SS,all,all,all,,,19.1,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Ladakh,person,rural + urban,15-29 years,PS+SS,all,all,all,,,18.7,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Kerala,person,rural + urban,15-29 years,PS+SS,all,all,all,,,18.2,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Telangana,person,rural + urban,15-29 years,PS+SS,all,all,all,,,18.1,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Nagaland,person,rural + urban,15-29 years,PS+SS,all,all,all,,,17.5,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Punjab,person,rural + urban,15-29 years,PS+SS,all,all,all,,,17.0,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Andhra Pradesh,person,rural + urban,15-29 years,PS+SS,all,all,all,,,16.2,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Goa,person,rural + urban,15-29 years,PS+SS,all,all,all,,,14.8,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Mizoram,person,rural + urban,15-29 years,PS+SS,all,all,all,,,14.5,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Delhi,person,rural + urban,15-29 years,PS+SS,all,all,all,,,14.4,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Jammu & Kashmir,person,rural + urban,15-29 years,PS+SS,all,all,all,,,14.1,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Tamil Nadu,person,rural + urban,15-29 years,PS+SS,all,all,all,,,14.1,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Uttarakhand,person,rural + urban,15-29 years,PS+SS,all,all,all,,,13.9,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Assam,person,rural + urban,15-29 years,PS+SS,all,all,all,,,12.6,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Rajasthan,person,rural + urban,15-29 years,PS+SS,all,all,all,,,12.3,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Meghalaya,person,rural + urban,15-29 years,PS+SS,all,all,all,,,12.2,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Bihar,person,rural + urban,15-29 years,PS+SS,all,all,all,,,12.1,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Haryana,person,rural + urban,15-29 years,PS+SS,all,all,all,,,11.8,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Tripura,person,rural + urban,15-29 years,PS+SS,all,all,all,,,11.3,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Chandigarh,person,rural + urban,15-29 years,PS+SS,all,all,all,,,10.7,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Odisha,person,rural + urban,15-29 years,PS+SS,all,all,all,,,10.6,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",West Bengal,person,rural + urban,15-29 years,PS+SS,all,all,all,,,10.6,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Sikkim,person,rural + urban,15-29 years,PS+SS,all,all,all,,,10.0,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Karnataka,person,rural + urban,15-29 years,PS+SS,all,all,all,,,8.6,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Jharkhand,person,rural + urban,15-29 years,PS+SS,all,all,all,,,8.2,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Maharashtra,person,rural + urban,15-29 years,PS+SS,all,all,all,,,7.7,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Uttar Pradesh,person,rural + urban,15-29 years,PS+SS,all,all,all,,,7.7,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Chhattisgarh,person,rural + urban,15-29 years,PS+SS,all,all,all,,,6.1,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Dadra & Nagar Haveli & Daman & Diu,person,rural + urban,15-29 years,PS+SS,all,all,all,,,4.2,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Madhya Pradesh,person,rural + urban,15-29 years,PS+SS,all,all,all,,,4.2,%
+Calendar Year,2025,Annually,"UR (Unemployment Rate, in per cent)",Gujarat,person,rural + urban,15-29 years,PS+SS,all,all,all,,,2.5,%

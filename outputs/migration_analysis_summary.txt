@@ -1,0 +1,42 @@
+YOUTH MIGRATION ANALYSIS - INDIA, CENSUS 2011
+==================================================
+
+Filtered records: 105
+States/UTs represented: 35
+Age range: 15–29 years
+Place of enumeration: Total
+Last residence: Total
+Duration: All durations of residence
+Measure: Total migrants (Persons)
+
+Top 10 states/UTs by youth migration count:
+         state  migrant_count
+   MAHARASHTRA       16095303
+ UTTAR PRADESH       15704443
+ANDHRA PRADESH       10851358
+   WEST BENGAL        9307879
+    TAMIL NADU        8043683
+         BIHAR        8003916
+       GUJARAT        7623957
+     KARNATAKA        7553033
+MADHYA PRADESH        7039643
+     RAJASTHAN        6636333
+
+Bottom 10 states/UTs by youth migration count:
+                    state  migrant_count
+              LAKSHADWEEP           5438
+ANDAMAN & NICOBAR ISLANDS          57139
+              DAMAN & DIU          71401
+     DADRA & NAGAR HAVELI          75926
+                   SIKKIM          78294
+                  MIZORAM         110085
+                 NAGALAND         178355
+               PUDUCHERRY         178375
+                  MANIPUR         180927
+        ARUNACHAL PRADESH         193982
+
+Limitations:
+- Data is from the Census of India 2011.
+- Counts are not population-adjusted migration rates.
+- Migration is not restricted to employment-related moves.
+- These counts should not be directly correlated with unemployment figures from 2022–2025 as same-year data.
