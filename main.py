@@ -18,11 +18,10 @@ def clean_column_names(df):
 
 
 def main():
-    # 1. Load the real unemployment dataset
+    
     unemployment = pd.read_csv(UNEMPLOYMENT_FILE)
     unemployment = clean_column_names(unemployment)
 
-    # 2. Validate required columns
     required = {"state", "year", "value"}
 
     if not required.issubset(unemployment.columns):
@@ -30,7 +29,6 @@ def main():
             f"unemployment.csv needs columns: {sorted(required)}"
         )
 
-    # 3. Clean and convert data types
     unemployment["state"] = unemployment["state"].astype("string").str.strip()
     unemployment["year"] = pd.to_numeric(
         unemployment["year"], errors="coerce"
@@ -45,14 +43,12 @@ def main():
 
     unemployment["year"] = unemployment["year"].astype(int)
 
-    # Keep the selected youth unemployment indicator
     unemployment = unemployment[
         unemployment["indicator"].astype(str).str.contains(
             "Unemployment Rate", case=False, na=False
         )
     ].copy()
 
-    # 4. Check for duplicate state-year records
     duplicates = unemployment.duplicated(
         subset=["state", "year"], keep=False
     )
@@ -62,12 +58,10 @@ def main():
             "Duplicate state-year records found. Check unemployment.csv."
         )
 
-    # 5. Save cleaned data
     unemployment.to_csv(
         OUT / "cleaned_unemployment.csv", index=False
     )
 
-    # 6. Rank states/UTs for the latest year
     latest_year = unemployment["year"].max()
 
     latest = unemployment[
@@ -78,7 +72,6 @@ def main():
         OUT / "state_unemployment_ranking.csv", index=False
     )
 
-    # 7. Plot the 15 highest unemployment rates
     plot_data = latest.head(15).sort_values("value")
 
     plt.figure(figsize=(10, 7))
@@ -93,7 +86,6 @@ def main():
     )
     plt.close()
 
-    # 8. Calculate yearly national averages across the 36 entries
     yearly = (
         unemployment.groupby("year", as_index=False)["value"]
         .mean()
@@ -104,7 +96,6 @@ def main():
         OUT / "yearly_unemployment_summary.csv", index=False
     )
 
-    # 9. Plot the average of the state/UT rates by year
     plt.figure(figsize=(9, 5))
     plt.plot(
         yearly["year"],
@@ -122,7 +113,6 @@ def main():
     )
     plt.close()
 
-    # 10. Write a summary report
     summary = [
         "YOUTH UNEMPLOYMENT ANALYSIS — INDIA",
         "Source: User-provided MoSPI eSankhyiki data",
